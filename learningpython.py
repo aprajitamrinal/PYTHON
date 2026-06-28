@@ -39,8 +39,60 @@ s1 = 'hi lol'
 print(s1[0])
 print(s1[1])
 print(s1[2])
+''' 
+#(4. slicing) accessing a range of characters in a string
+"""
+str = "Apnaclass"
+print(str[0:3]) #output Apn
+print(str[3:]) #output aclass
+print(str[:5]) #output Apnac
+"""
+#negative indexing
 '''
-#(4. slicing)
+str = "Apnaclass"
+print(str[-1:len(str)]) #output s
+print(str[-3:-1]) #output as
+'''
+#string functions
+'''
+str.endswith() #check if the string ends with a specific character
+str.capitalze() #capitalize the first character of the string
+str.lower() #convert the string to lowercase
+str.upper() #convert the string to uppercase
+str.replace() #replace a specific character in the string with another character
+str.find() #find the index of a specific character in the string
+str.count() #count the number of occurrences of a specific character in the string
+str.split() #split the string into a list of substrings based on a specific character
+'''
+"""
+example of string functions
+str = 'HELLO WORLD'
+print(str.endswith('D')) #output True
+print(str.capitalize()) #output Hello world
+print(str.lower()) #output hello world
+print(str.upper()) #output HELLO WORLD
+print(str.replace('H', 'i')) #output iELLO WORLD
+print(str.find('W')) #output 6
+print(str.count('L')) #output 3
+print(str.split(' ')) #output ['HELLO', 'WORLD']
+"""
+# Q. WAP TO INPUT USER'S FIRST NAME & PRINT IT'S LENGTH
+'''
+str = "aman"
+print(len(str))
+'''
+
+# WAP TO FIND THE OCCURANCE OF 'S' IN A STRING
+str = "hi is this phone is of samsung company"
+print(str.count('s')) #output 6
+
+
+
+
+
+
+
+
 
 
 
