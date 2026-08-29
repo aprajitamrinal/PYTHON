@@ -79,12 +79,26 @@ print(str.split(' ')) #output ['HELLO', 'WORLD']
 # Q. WAP TO INPUT USER'S FIRST NAME & PRINT IT'S LENGTH
 '''
 str = "aman"
-print(len(str))
+print(len(str)) #output 4
 '''
 
 # WAP TO FIND THE OCCURANCE OF 'S' IN A STRING
+'''
 str = "hi is this phone is of samsung company"
-print(str.count('s')) #output 6
+print(str.count('s')) #output 5
+'''
+# 5. conditional statements ( SYNTAX IF, ELIF, ELSE)
+'''
+if condition:
+    #code to be executed if condition is true
+elif condition:
+    #code to be executed if condition is true
+else:
+    #code to be executed if condition is false
+'''
+
+
+
 
 
 
