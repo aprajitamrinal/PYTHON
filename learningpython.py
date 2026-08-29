@@ -96,8 +96,64 @@ elif condition:
 else:
     #code to be executed if condition is false
 '''
-
-
+# example of conditional statements
+"""
+age = int(input("enter your age:"))
+if age>=18:
+    print("you are eligible to vote")
+elif age>=19:
+    print("you are also eligible to vote")
+else:
+    print("you are not eligible to vote")
+"""
+# grades students based on marks
+'''
+mark = int(input("enter marks out of 100:"))
+if mark >=90:
+    print("A'")
+elif mark >=80:
+    print("B")
+else:
+    print("C")
+'''
+# nesting of if else statements
+'''
+age = int(input("enter your age:"))
+if age>=18:
+    if age>=80:
+        print("can't drive")
+    else:
+        print("can drive")
+else:
+    print("can't drive")
+'''
+#WAP TO CHECK WHETHER A NUMBER IS EVEN OR ODD
+"""
+a = int(input("enter a number:"))
+if a%2==0:
+ print("even")
+else :
+    print("odd")
+"""
+# WAP TO FIND GREATEST OF 3 NUMBERS ENTERED BY USER
+"""
+a = int(input("enter first number:"))
+b = int(input("enter second number:"))
+c = int(input("enter third number:"))
+if a>b and a>c:
+    print("a is greatest")
+elif b>a and b>c:
+    print("b is greatest")
+else:
+    print("c is greatest")
+"""
+# WAP TO CHECK IF A NUMBER IS A MULTIPLE OF 7 OR NOT
+a=int(input("enter a number:"))
+if a%7==0:
+    print("multiple of 7")
+else:
+    print("not a multiple of 7")
+#LISTS AND TUPLES
 
 
 
