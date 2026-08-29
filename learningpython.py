@@ -154,7 +154,135 @@ if a%7==0:
 else:
     print("not a multiple of 7")
 #LISTS AND TUPLES
+"""
+ marks =[90,80,70,66,50]
+ print(marks[0]) #output 90
+ print(marks[1]) #output 80
+ print(type(marks)) #output <class 'list'>
+ print(len(marks)) #output 5
+ """
+#strings are immutable but lists are mutable
+'''
+str = 'HELLO'
+print(str[0]) #output H
+str[0] = 'h' #output error
 
+student = ["karan" , 74.5 ,15 , "male"]
+student[0] = "aman"
+print(student) #output ['aman', 74.5, 15, 'male']
+'''
+#list slicing 
+'''
+marks =[84,64,74,90,50]
+marks[1:4] #output [64, 74, 90]
+marks[2:] #output [74, 90, 50]
+marks[:3] #output [84, 64, 74]
+marks[-3:-1] #output [74, 90]
+'''
+#list methods
+'''
+list = [1,2,3,4,5]
+list.append(6) #add 6 to the end of the list
+list.sort() #sorts in ascending order [1,2,3,4,5,6]
+list.sort(reverse=True) #sorts in descending order [6,5,4,3,2,1]
+list.reverse() #reverses the list [5,4,3,2,1]
+list.insert(2, 10) #inserts 10 at index 2 [1,2,10,3,4,5]
+list.remove(3) #removes 3 from the list [1,2,10,4,5]
+list.pop(idx) #removes the element at index 2 from the list [1,2,4,5]
+list.pop(2) #removes the element at index 2 from the list [1,2,4,5]
+
+list = [2,1,3]
+print(list.append(4)) #output None
+print(list) #output [2, 1, 3, 4]
+print(list.sort()) #output None
+print(list) #output [1, 2, 3, 4]
+print(list.sort(reverse=True)) #output None
+print(list) #output [4, 3, 2, 1]
+
+list = ["banana", "apple", "cherry"]
+list.sort() #sorts in ascending order ['apple', 'banana', 'cherry']
+list.sort(reverse=True) #sorts in descending order ['cherry', 'banana', 'apple']
+'''
+#TUPLES
+#tuples are immutable
+'''
+tup = (1,2,3,4,5)
+print(tup[0]) #output 1
+print(tup)
+print(type(tup)) #output <class 'tuple'>
+a = (1)
+print(type(a)) #output <class 'int'>
+b = (1,)
+print(type(b)) #output <class 'tuple'>
+'''
+#TUPLE METHODS
+'''
+tup = (2,1,3)
+tup.index(element) #returns the index of the first occurrence of the element
+tup.index(2) #output 0
+tup.count(element) #returns the number of occurrences of the element
+tup.count(2) #output 1
+'''
+#WAP TO ASK THE USER TO ENTER NAMES OF THEIR 3 FAVORITE MOVIES N STORE THEM IN A LIST
+'''
+movies = []
+mov1 = input("enter 1st movie:")
+mov2 = input ("enter 2nd movie:")
+mov3 = input("enter 3rd movie:")
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+print(movies) #output ['movie1', 'movie2', 'movie3']
+'''
+#WAP TO CHECK IF A LIST CONTAINS A PALINDROME OF ELEMENTS.
+'''
+list1 = [1,2,3]
+list2 = [1,2,1]
+list3 = list1.copy()
+list3.reverse()
+if(list3 == list1):
+    print("list is a palindrome")
+else:
+    print("list is not a palindrome") #output list is not a palindrome
+'''
+
+#WAP TO COUNT THE NUMBER OF STUDENTS WITH THE "A" GRADE IN THE FOLLOWING TUPLE
+'''
+grades = ("A" , "B" , "C" , "A" , "B" , "A")
+print(grades.count("A")) #output 3
+# STORE THE ABOVE VALUES IN A LIST & STORE THEM FROM "A" T "C"
+gradesinlist = list(grades)
+gradesinlist.sort()
+print(gradesinlist) #output ['A', 'A', 'A', 'B', 'B', 'C']
+'''
+
+#DICTIONARIES
+#dictionaries are mutable "key": value 
+info = { 
+    "key" : "value" , 
+    "name" : "mahi",
+    "age" : 20 , 
+    "subjects" : ["maths" , "science" , "english"] , 
+    "topics" : ("algebra" , "geometry" , "trigonometry") ,
+    12.99 : 94.45 
+
+}
+info["name"] = "aprajita" #updating the value of the key "name" 
+info["surname"] = "sharma" #adding a new key-value pair to the dictionary   
+print(info) #output {'key': 'value', 'name': 'aprajita', 'age': 20, 'subjects': ['maths', 'science', 'english'], 'topics': ('algebra', 'geometry', 'trigonometry'), 12.99: 94.45, 'surname': 'sharma'}  
+
+print(info) #not updated value of the key "name"
+print(type(info)) #output <class 'dict'>
+print(info["name"]) #output mahi (not updated value of the key "name")
+print(info["surname"]) #output sharma
+print(info["age"]) #output 20
+
+null_dict = {} #empty dictionary
+
+
+
+
+ 
 
 
 
